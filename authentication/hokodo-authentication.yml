@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.hokodo.co/v1/companies
+docs: https://docs.hokodo.co/
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  scheme: Token
+  oauth2_flows: []
+schemes:
+  - name: TokenAuth
+    type: apiKey
+    in: header
+    parameter: Authorization
+    format: "Authorization: Token <api-key>"
+    description: >-
+      Hokodo authenticates API requests with a secret API key presented in the
+      Authorization header using the "Token" scheme (Django REST Framework
+      TokenAuthentication). A live challenge to https://api.hokodo.co/v1/companies
+      returns HTTP 401 with header `WWW-Authenticate: Token` and body
+      {"detail": "Authentication credentials were not provided."}.
+    sources: [probe:https://api.hokodo.co/v1/companies]
+evidence:
+  - source: https://api.hokodo.co/v1/companies
+    status: 401
+    www_authenticate: Token
+    body: '{"detail":"Authentication credentials were not provided."}'
+notes: >-
+  Separate live and sandbox keys are issued per environment
+  (sandbox console at https://sandbox.hokodo.co). No OpenAPI specification is
+  currently published publicly, so this profile is derived from the live API
+  authentication challenge rather than a securitySchemes block.
