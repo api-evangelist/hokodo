@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/package/@hokodo/hokodo-js
+packages:
+  - language: javascript
+    registry: npm
+    name: "@hokodo/hokodo-js"
+    url: https://www.npmjs.com/package/@hokodo/hokodo-js
+    install: npm install @hokodo/hokodo-js
+    version: 0.0.1-alpha.9
+    homepage: https://www.hokodo.co
+    official: true
+    notes: First-party Hokodo JS SDK (scoped @hokodo npm org).
+  - language: php
+    registry: packagist
+    name: hokodo/magento-bnpl
+    url: https://packagist.org/packages/hokodo/magento-bnpl
+    install: composer require hokodo/magento-bnpl
+    repository: https://github.com/hokodo-tech/magento-hokodo-bnpl
+    official: true
+    notes: Official Hokodo BNPL module for Magento 2 (Community).
+  - language: php
+    registry: packagist
+    name: hokodo/magento-ee-bnpl
+    url: https://packagist.org/packages/hokodo/magento-ee-bnpl
+    install: composer require hokodo/magento-ee-bnpl
+    repository: https://github.com/hokodo-tech/magento-ee-hokodo-bnpl
+    official: true
+    notes: Official Hokodo BNPL module for Magento Enterprise Edition.
+third_party:
+  - language: javascript
+    registry: npm
+    name: hokodo
+    url: https://www.npmjs.com/package/hokodo
+    description: Hokodo API wrapper (community, not first-party).
+    official: false
+  - language: javascript
+    registry: npm
+    name: hokodo-library
+    url: https://www.npmjs.com/package/hokodo-library
+    description: TypeScript library to facilitate use of the Hokodo API (community).
+    official: false

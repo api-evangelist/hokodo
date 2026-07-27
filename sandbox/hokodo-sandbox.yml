@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://sandbox.hokodo.co/
+environments:
+  test_live_separation: true
+  environments:
+    - name: sandbox
+      console: https://sandbox.hokodo.co
+      status: 200
+      description: >-
+        Hokodo sandbox / developer console. Merchants sign in here to obtain
+        sandbox API keys and integrate against test data before going live.
+    - name: live
+      api_base: https://api.hokodo.co/v1/
+  key_model: >-
+    Separate secret API keys are issued per environment (sandbox vs live),
+    presented as `Authorization: Token <key>`.
+test_values:
+  note: >-
+    Hokodo publishes sandbox test companies / credit scenarios inside its
+    documentation, but the public API reference (docs.hokodo.co,
+    bnpl.docs.hokodo.co) was unreachable at capture time, so no verbatim test
+    identifiers are recorded here. NEVER invent test values — capture them on a
+    future run once the docs are restored.

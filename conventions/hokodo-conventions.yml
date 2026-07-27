@@ -1,0 +1,42 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.hokodo.co/v1/
+docs: https://docs.hokodo.co/
+authentication:
+  style: api-key
+  header: Authorization
+  scheme: Token
+  cross_ref: authentication/hokodo-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  base: https://api.hokodo.co/v1/
+  evidence: "https://api.hokodo.co/v1/companies returns 401 (authenticated); unversioned paths return 404"
+error_envelope:
+  format: drf-detail
+  shape: '{"detail": "<message>"}'
+  content_type: application/json
+  note: >-
+    Django REST Framework style error envelope. Field-level validation errors
+    are returned as a JSON object keyed by field name. Not RFC 9457
+    problem+json.
+  cross_ref: errors/hokodo-problem-types.yml
+idempotency:
+  supported: unknown
+  note: >-
+    No idempotency-key header was observed on the live API and no public
+    OpenAPI or docs page could be retrieved to confirm one. Not asserting an
+    Idempotency contract without evidence.
+pagination:
+  style: unknown
+  note: Not verified — public API reference (docs.hokodo.co / bnpl.docs.hokodo.co) was unreachable at capture time.
+rate_limiting:
+  signalled: unknown
+metadata:
+  supported: unknown
+environments:
+  - name: sandbox
+    console: https://sandbox.hokodo.co
+    cross_ref: sandbox/hokodo-sandbox.yml
+  - name: live
+    api_base: https://api.hokodo.co/v1/

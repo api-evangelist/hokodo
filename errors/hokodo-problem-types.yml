@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.hokodo.co/v1/companies
+format: drf-detail
+envelope:
+  shape: '{"detail": "<message>"}'
+  content_type: application/json
+  note: >-
+    Django REST Framework style. A single human-readable message under
+    `detail` for request-level errors; field validation errors return a JSON
+    object keyed by field name. Not RFC 9457 (application/problem+json).
+problems:
+  - status: 401
+    title: Authentication credentials were not provided
+    detail: '{"detail":"Authentication credentials were not provided."}'
+    www_authenticate: Token
+    source: probe:https://api.hokodo.co/v1/companies
+    observed: true
+  - status: 404
+    title: Not found
+    source: probe:https://api.hokodo.co/v1/orders
+    observed: true
+notes: >-
+  Only statuses directly observed against the live API are recorded here. No
+  public OpenAPI or error-reference page was retrievable at capture time
+  (docs.hokodo.co returned Vercel DEPLOYMENT_NOT_FOUND, bnpl.docs.hokodo.co
+  returned Not Found), so the full error registry could not be derived. Expand
+  on a future run if the API reference is restored.

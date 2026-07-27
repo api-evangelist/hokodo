@@ -1,23 +1,116 @@
 aid: hokodo
 name: Hokodo
-description: 'Hokodo is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Hokodo is a London-based B2B payments and embedded trade-credit fintech that
+  lets merchants and B2B marketplaces offer digital trade accounts and Buy Now,
+  Pay Later at checkout. Buyers get instant credit decisions and flexible terms
+  (30/60/90-day payment terms, instalments, and consolidated trade accounts)
+  while Hokodo underwrites the credit risk, finances the invoice, and protects
+  the merchant against non-payment. The platform is delivered through a
+  versioned REST API (https://api.hokodo.co/v1/) covering companies, customers,
+  credit offers, orders and payment plans, plus prebuilt Magento modules and a
+  JavaScript SDK. Hokodo is backed by Anthemis and other investors and operates
+  across the UK and Europe.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/5c80a8f7065a7b1940eb8538/684bf894db503831d2c72284_Home.png
 url: https://raw.githubusercontent.com/api-evangelist/hokodo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - anthemis
-x-tier: stub
+x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
-apis: []
+- B2B Payments
+- Buy Now Pay Later
+- Trade Credit
+- Embedded Finance
+- Invoice Financing
+- Payments API
+apis:
+- name: Hokodo BNPL API
+  description: >-
+    Hokodo's B2B Buy Now, Pay Later REST API. Create companies and customers,
+    request credit offers, place orders, and manage deferred payment plans and
+    trade accounts. Versioned at /v1/; authenticated with a secret API key via
+    the Authorization Token scheme.
+  humanURL: https://docs.hokodo.co/
+  baseURL: https://api.hokodo.co/v1/
+  tags:
+  - BNPL
+  - Payments
+  - Trade Credit
+  properties:
+  - type: Authentication
+    url: authentication/hokodo-authentication.yml
+  - type: Conventions
+    url: conventions/hokodo-conventions.yml
+  - type: ErrorCatalog
+    url: errors/hokodo-problem-types.yml
+  - type: Sandbox
+    url: sandbox/hokodo-sandbox.yml
+common:
+- type: DomainSecurity
+  url: security/hokodo-domain-security.yml
+- type: DeveloperPortal
+  url: https://docs.hokodo.co/
+- type: Documentation
+  url: https://docs.hokodo.co/
+- type: APIReference
+  url: https://docs.hokodo.co/
+- type: SignUp
+  url: https://sandbox.hokodo.co/
+- type: Sandbox
+  url: https://sandbox.hokodo.co/
+- type: Support
+  url: https://hokodo.freshdesk.com/en/support/home
+- type: Blog
+  url: https://hokodo.co/resources
+- type: GitHubOrganization
+  url: https://github.com/hokodo-tech
+- type: TermsOfService
+  url: https://static.hokodo.co/shared/hokodotermsandconditions.pdf
+- type: PrivacyPolicy
+  url: https://static.hokodo.co/shared/hokodoprivacypolicy.pdf
+- type: Website
+  url: https://www.hokodo.co/
+- type: Packages
+  url: packages/hokodo-packages.yml
+- type: SDKs
+  url: packages/hokodo-packages.yml
+- type: Authentication
+  url: authentication/hokodo-authentication.yml
+- type: Conventions
+  url: conventions/hokodo-conventions.yml
+- type: ErrorCatalog
+  url: errors/hokodo-problem-types.yml
+- type: Sandbox
+  url: sandbox/hokodo-sandbox.yml
+- type: LLMsTxt
+  url: llms/hokodo-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
