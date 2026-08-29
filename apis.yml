@@ -11,6 +11,17 @@ description: >-
   credit offers, orders and payment plans, plus prebuilt Magento modules and a
   JavaScript SDK. Hokodo is backed by Anthemis and other investors and operates
   across the UK and Europe.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
