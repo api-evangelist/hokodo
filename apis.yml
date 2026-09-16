@@ -66,6 +66,10 @@ apis:
   humanURL: https://docs.hokodo.co/
   baseURL: https://api.hokodo.co/v1/
   tags:
+  - Buy Now Pay Later
+  - Payments
+  - Trade Credit
+  tags_raw:
   - BNPL
   - Payments
   - Trade Credit
