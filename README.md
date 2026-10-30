@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Hokodo is a company surfaced as a portfolio company of anthemis and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.
+Hokodo is a London-based B2B payments and embedded trade-credit fintech that lets merchants and B2B marketplaces offer digital trade accounts and Buy Now, Pay Later at checkout. Buyers get instant credit decisions and flexible terms (30/60/90-day payment terms, instalments, and consolidated trade accounts) while Hokodo underwrites the credit risk, finances the invoice, and protects the merchant against non-payment. The platform is delivered through a versioned REST API (https://api.hokodo.co/v1/) covering companies, customers, credit offers, orders and payment plans, plus prebuilt Magento modules and a JavaScript SDK. Hokodo is backed by Anthemis and other investors and operates across the UK and Europe.
 
-Backed by: anthemis
+**Areas:** Company · Fintech · B2B Payments · Buy Now Pay Later · Trade Credit · Embedded Finance · Invoice Financing · Payments API
+
+## Hokodo on APIs.io
+
+Everything profiled for Hokodo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/hokodo/](https://apis.io/providers/hokodo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Hokodo BNPL API](https://apis.io/apis/hokodo/hokodo-bnpl-api/) — Hokodo's B2B Buy Now, Pay Later REST API. Create companies and customers, request credit offers, place orders, and manage deferred payment plans and trade…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Hokodo Authentication](https://apis.io/security/hokodo/hokodo-authentication/)
+- [Hokodo Domain Security](https://apis.io/security/hokodo/hokodo-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.hokodo.co/)
+- [Documentation](https://docs.hokodo.co/)
+- [API reference](https://docs.hokodo.co/)
+- [Sign up](https://sandbox.hokodo.co/)
+- [Support](https://hokodo.freshdesk.com/en/support/home)
+- [Blog](https://www.hokodo.co/resources)
+- [Terms of service](https://static.hokodo.co/shared/hokodotermsandconditions.pdf)
+- [Privacy policy](https://static.hokodo.co/shared/hokodoprivacypolicy.pdf)
+- [GitHub](https://github.com/hokodo-tech)
+
+## API Evangelist rating
+
+**Kin Score 22.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 41.7 |
+| Access clarity | 34.2 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.9** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/hokodo/](https://apis.io/providers/hokodo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Hokodo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/hokodo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
